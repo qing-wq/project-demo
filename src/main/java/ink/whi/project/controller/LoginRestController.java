@@ -1,12 +1,12 @@
 package ink.whi.project.controller;
 
-import ink.whi.project.exception.StatusEnum;
+import ink.whi.project.common.exception.StatusEnum;
 import ink.whi.project.filter.GlobalInitHelper;
-import ink.whi.project.service.user.service.UserService;
-import ink.whi.project.utils.JwtUtil;
-import ink.whi.project.utils.SessionUtil;
-import ink.whi.project.vo.dto.BaseUserDTO;
-import ink.whi.project.vo.res.ResVo;
+import ink.whi.project.modules.user.service.UserService;
+import ink.whi.project.common.utils.JwtUtil;
+import ink.whi.project.common.utils.SessionUtil;
+import ink.whi.project.common.vo.dto.BaseUserDTO;
+import ink.whi.project.common.vo.res.ResVo;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;

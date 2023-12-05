@@ -5,34 +5,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="683a9610-e45c-4e72-a474-a5a804832adf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ink/whi/project/ApplicationRun.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ink/whi/project/context/ReqInfoContext.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ink/whi/project/exception/BusinessException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ink/whi/project/exception/ForumExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ink/whi/project/exception/Status.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ink/whi/project/exception/StatusEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ink/whi/project/filter/BodyReaderHttpServletRequestWrapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ink/whi/project/filter/GlobalFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ink/whi/project/filter/GlobalInitHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ink/whi/project/service/user/converter/UserConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ink/whi/project/service/user/repo/dao/UserDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ink/whi/project/service/user/repo/entity/UserDO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ink/whi/project/service/user/repo/mapper/UserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ink/whi/project/service/user/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ink/whi/project/service/user/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ink/whi/project/utils/CrossUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ink/whi/project/utils/JsonUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ink/whi/project/utils/JwtUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ink/whi/project/utils/SessionUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ink/whi/project/utils/SpringUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ink/whi/project/vo/base/BaseDO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ink/whi/project/vo/base/BaseDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ink/whi/project/vo/dto/BaseUserDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ink/whi/project/vo/res/ResVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application-dal.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/UserInfoMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ink/whi/project/context/ReqInfoContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ink/whi/project/common/context/ReqInfoContext.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ink/whi/project/controller/LoginRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ink/whi/project/controller/LoginRestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ink/whi/project/exception/BusinessException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ink/whi/project/common/exception/BusinessException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ink/whi/project/exception/ForumExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ink/whi/project/common/exception/ForumExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ink/whi/project/exception/Status.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ink/whi/project/common/exception/Status.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ink/whi/project/exception/StatusEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ink/whi/project/common/exception/StatusEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ink/whi/project/filter/GlobalFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ink/whi/project/filter/GlobalFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ink/whi/project/filter/GlobalInitHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ink/whi/project/filter/GlobalInitHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ink/whi/project/service/user/converter/UserConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ink/whi/project/modules/user/converter/UserConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ink/whi/project/service/user/repo/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ink/whi/project/modules/user/repo/dao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ink/whi/project/service/user/repo/entity/UserDO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ink/whi/project/modules/user/repo/entity/UserDO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ink/whi/project/service/user/repo/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ink/whi/project/modules/user/repo/mapper/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ink/whi/project/service/user/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ink/whi/project/modules/user/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ink/whi/project/service/user/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ink/whi/project/modules/user/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ink/whi/project/utils/CrossUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ink/whi/project/common/utils/CrossUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ink/whi/project/utils/JsonUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ink/whi/project/common/utils/JsonUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ink/whi/project/utils/JwtUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ink/whi/project/common/utils/JwtUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ink/whi/project/utils/SessionUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ink/whi/project/common/utils/SessionUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ink/whi/project/utils/SpringUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ink/whi/project/common/utils/SpringUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ink/whi/project/vo/base/BaseDO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ink/whi/project/common/vo/base/BaseDO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ink/whi/project/vo/base/BaseDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ink/whi/project/common/vo/base/BaseDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ink/whi/project/vo/dto/BaseUserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ink/whi/project/common/vo/dto/BaseUserDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ink/whi/project/vo/res/ResVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ink/whi/project/common/vo/res/ResVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/UserInfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/UserInfoMapper.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,18 +43,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="useMavenConfig" value="true" />
-      </MavenGeneralSettings>
-    </option>
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="workspaceImportEnabled" value="true" />
-      </MavenImportingSettings>
-    </option>
-  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 4
+}]]></component>
   <component name="ProjectId" id="2WrwKtGArTCzStebW7Mba3YLDKd" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -70,14 +59,14 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/home/qing/MyDocument/code/cloud-project/project-demo",
+    "last_opened_file_path": "/Users/qing/MyDocuments/code/ideaProject/zhishu-match",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "settings.build.tools.auto.reload": "ALL",
-    "settings.editor.selected.configurable": "editor.preferences.completion",
+    "settings.editor.selected.configurable": "configurable.group.appearance",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -90,10 +79,15 @@
       <option name="presentableId" value="Default" />
       <updated>1697503946237</updated>
       <workItem from="1697503947517" duration="644000" />
+      <workItem from="1701753903755" duration="1439000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
