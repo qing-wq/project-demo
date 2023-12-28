@@ -1,4 +1,4 @@
-package ink.whi.project.common.vo.res;
+package ink.whi.project.common.domain.vo;
 
 import ink.whi.project.common.exception.Status;
 import ink.whi.project.common.exception.StatusEnum;

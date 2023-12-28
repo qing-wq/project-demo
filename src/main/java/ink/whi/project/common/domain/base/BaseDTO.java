@@ -1,4 +1,4 @@
-package ink.whi.project.common.vo.base;
+package ink.whi.project.common.domain.base;
 
 import lombok.Data;
 

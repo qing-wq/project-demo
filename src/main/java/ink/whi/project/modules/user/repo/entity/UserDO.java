@@ -1,9 +1,11 @@
 package ink.whi.project.modules.user.repo.entity;
 
 import com.baomidou.mybatisplus.annotation.TableName;
-import ink.whi.project.common.vo.base.BaseDO;
+import ink.whi.project.common.domain.base.BaseDO;
 import lombok.Data;
 import lombok.experimental.Accessors;
+
+import java.io.Serial;
 
 /**
  * @author: qing
@@ -13,12 +15,13 @@ import lombok.experimental.Accessors;
 @Accessors(chain = true)
 @TableName("user")
 public class UserDO extends BaseDO {
+    @Serial
     private static final long serialVersionUID = 4704149522920373163L;
 
     /**
-     * 登录用户名
+     * 账号
      */
-    private String userName;
+    private String account;
 
     /**
      * 登录密码

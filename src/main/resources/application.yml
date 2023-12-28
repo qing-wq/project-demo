@@ -7,19 +7,18 @@ server:
 
 spring:
   main:
-    allow-circular-references: true
+    allow-circular-references: true  # 允许循环依赖
   config:
-    import: application-dal.yaml.yml
+    import:
+      - application-dal.yaml
+      - application-monitor.yaml
 
 database:
-  name:
-
-jwt:
-  key: secret-key
+  name: dbname
 
 security:
-  salt: salt-key
-  salt-index: 2
+  jwt:
+    key: "secret_key"
 
 logging:
   level:

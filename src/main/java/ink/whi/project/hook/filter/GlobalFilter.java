@@ -1,7 +1,8 @@
-package ink.whi.project.filter;
+package ink.whi.project.hook.filter;
 
 import ink.whi.project.common.context.ReqInfoContext;
 import ink.whi.project.common.utils.CrossUtil;
+import ink.whi.project.common.utils.IpUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
@@ -17,8 +18,6 @@ import java.net.URLDecoder;
 
 /**
  * 认证Filter
- * @author: qing
- * @Date: 2023/4/27
  */
 @Slf4j
 @WebFilter(urlPatterns = "/*", filterName = "globalFilter", asyncSupported = true)
@@ -54,6 +53,7 @@ public class GlobalFilter implements Filter {
             reqInfo.setPath(request.getPathInfo());
             reqInfo.setReferer(request.getHeader("referer"));
             reqInfo.setUserAgent(request.getHeader("User-Agent"));
+            reqInfo.setClientIp(IpUtil.getClientIp(request));
             request = this.wrapperRequest(request, reqInfo);
             // 校验token
             globalInitService.initUserInfo(reqInfo);
@@ -87,6 +87,7 @@ public class GlobalFilter implements Filter {
             msg.append("referer=").append(URLDecoder.decode(req.getReferer())).append("; ");
         }
         msg.append("; agent=").append(req.getUserAgent());
+        msg.append("; ip=").append(req.getClientIp());
 
         if (req.getUserId() != null) {
             // 打印用户信息
@@ -110,6 +111,8 @@ public class GlobalFilter implements Filter {
                 || request.getRequestURI().endsWith("js")
                 || request.getRequestURI().endsWith("png")
                 || request.getRequestURI().endsWith("ico")
-                || request.getRequestURI().endsWith("svg");
+                || request.getRequestURI().endsWith("svg")
+                // 忽略actuator端点
+                || request.getRequestURI().equalsIgnoreCase("/actuator/prometheus");
     }
 }

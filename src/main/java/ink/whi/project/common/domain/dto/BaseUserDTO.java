@@ -1,16 +1,21 @@
-package ink.whi.project.common.vo.dto;
+package ink.whi.project.common.domain.dto;
 
-import ink.whi.project.common.vo.base.BaseDTO;
+import ink.whi.project.common.domain.base.BaseDTO;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 import lombok.experimental.Accessors;
+
+import java.io.Serial;
 
 /**
  * @author: qing
- * @Date: 2023/4/26
+ * @Date: 2023/12/5
  */
 @Data
+@EqualsAndHashCode(callSuper = true)
 @Accessors(chain = true)
 public class BaseUserDTO extends BaseDTO {
+    @Serial
     private static final long serialVersionUID = -2426438424647735636L;
 
     /**

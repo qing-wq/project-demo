@@ -9,6 +9,7 @@ import javax.servlet.http.Cookie;
  */
 public class SessionUtil {
     private static final int COOKIE_AGE = 30 * 86400;
+    public static final String SESSION_KEY = "ff-session";
 
     public static Cookie newCookie(String key, String session) {
         return newCookie(key, session, "/", COOKIE_AGE);
